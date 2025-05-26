@@ -1,0 +1,75 @@
+/* nav bar styling starts */
+.nav-bar-main{
+  @apply fixed w-full z-[99999] shadow-xl
+}
+.nav-bar-container{
+  @apply flex justify-between items-center bg-secondary dark:bg-dark-secondary font-sans py-4 w-full md:px-8;
+}
+.nav-logo{
+  @apply flex items-center ;
+}
+.nav-logo p{
+  @apply font-extrabold text-[25px] 
+   dark:text-dark-text text-text
+}
+.nav-link{
+  @apply hidden md:flex
+ }
+.nav-link a{
+  @apply text-[13px] lg:text-[16px] font-semibold
+}
+.nav-link .active-text, .drawer-container .active-text{
+  @apply text-accent dark:text-dark-accent
+}
+.nav-third-container{
+  @apply items-center justify-end gap-3 hidden md:flex;
+}
+.btn-hire-sub{
+  @apply text-[13px] lg:text-[16px] text-black rounded-3xl hover:border hover:border-solid hover:border-accent py-1 px-3 hover:bg-accent hover:text-white cursor-pointer
+}
+.toggle-btn{
+  @apply shadow-md p-2 rounded-[50%] flex items-center justify-center
+}
+.burger-container{
+  @apply md:hidden flex items-center gap-1
+}
+.drawer-container a{
+  @apply  text-text dark:text-dark-text
+}
+/* nav bar styling ends */
+.header-container {
+  @apply w-full pt-10 lg:pt-[6rem] bg-background text-text dark:bg-dark-background dark:text-dark-text;
+}
+.header-main{
+  @apply font-sans mt-10;
+}
+.header-grid-main{
+  @apply max-lg:items-center max-lg:text-center max-lg:flex-row;
+}
+.animated-div-grid{
+  @apply max-h-[360px] h-full max-lg:mt-10 flex flex-col gap-1
+}
+.animated-title{
+  @apply text-accent dark:text-dark-accent font-sans
+}
+.animated-text{
+  @apply  font-semibold
+}
+.animated-text-2{
+  @apply mt-2 sm:text-[16px] text-[14px];
+}
+.header-social{
+  @apply flex space-x-10 flex-1 max-[360px]:space-x-5 my-8 max-lg:justify-center;
+}
+.header-social a{
+  @apply p-2 rounded-full border-2 border-text dark:border-dark-text transition duration-300 text-text dark:text-dark-text hover:border-accent hover:dark:border-dark-accent hover:text-accent hover:dark:text-dark-accent cursor-pointer hover:-translate-y-1 
+}
+.cv-btn{
+  @apply bg-accent dark:bg-dark-accent rounded-3xl hover:border-2 my-auto hover:border-accent px-3 py-2 hover:border-solid hover:bg-transparent hover:cursor-pointer
+}
+/* .floating-container{
+  @apply bg-[green]
+} */
+.header-floating-img{
+  @apply max-w-[580px] max-sm:object-contain w-full h-[500px] object-cover mx-auto
+}
