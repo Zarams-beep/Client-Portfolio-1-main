@@ -5,6 +5,7 @@ export const progressBarsData = [
     { label: "Statistical Analysis", percentage: 60 },
     { label: "Data Visualization", percentage: 90 },
     { label: "Machine Learning", percentage: 75 },
+         { label: "Python", percentage: 70 },
     { label: "SQL", percentage: 50 },
     { label: "R", percentage: 60 },
   ];
