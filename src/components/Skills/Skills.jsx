@@ -22,7 +22,7 @@ export default function Skills() {
   return (
     <section
       ref={ref}
-      className={`${styles.body} flex flex-col space-y-8 bg-secondary py-14`}
+      className={`${styles.body} flex flex-col space-y-8 bg-secondary dark:bg-dark-secondary py-14`}
       id="skills"
     >
       <Heading name={`My`} name2={`Skills`} />

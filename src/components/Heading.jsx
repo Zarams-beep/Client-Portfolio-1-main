@@ -21,16 +21,16 @@ export default function Heading({ name, name2 }) {
   return (
     <animated.div ref={ref} style={headerAnimation}>
       <Title
-        order={2}
-        size="h1"
-        fw={900}
-        ta="center"
-        c={`white`}
-        className={`font-sans`}
-      >
-        {name} <span className="text-accent">{name2}</span>
-        <div className="w-56 h-0.5 bg-white block mx-auto mt-3" />
-      </Title>
+  order={2}
+  size="h1"
+  fw={900}
+  ta="center"
+  className="font-sans text-text dark:text-dark-text"
+>
+  {name} <span className="text-accent">{name2}</span>
+  <div className="w-56 h-0.5 bg-text dark:bg-dark-text block mx-auto mt-3" />
+</Title>
+
     </animated.div>
   );
 }

@@ -18,7 +18,7 @@ export default function Footer() {
   });
 
   return (
-    <footer ref={ref} className={`${styles.body} py-6 bg-primary text-white flex-1`}>
+    <footer ref={ref} className={`${styles.body} py-6 bg-primary dark:bg-dark-primary text-white flex-1`}>
       <animated.div style={footerAnimation}>
         <Text size="sm" className="text-center">
           {footerContent.text}

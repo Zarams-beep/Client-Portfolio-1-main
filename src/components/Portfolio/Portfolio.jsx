@@ -64,11 +64,11 @@ export default function Portfolio() {
 
   return (
     <section
-      className={`${styles.body} bg-primary pb-12 pt-6 grid place-items-center xl:justify-center`}
+      className={`${styles.body} bg-background dark:bg-dark-background pb-12 pt-6 grid place-items-center xl:justify-center`}
       ref={ref}
       id="projects"
     >
-      <Heading name="Porfolio" />
+      <Heading name="My" name2="Porfolio" />
       <SimpleGrid mt={60} cols={{ base: 1, xs:2, sm: 3, lg: 4 }}>
         {all}
       </SimpleGrid>

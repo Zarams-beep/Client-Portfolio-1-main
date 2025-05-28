@@ -2,5 +2,5 @@
     @apply flex flex-col space-y-5 px-4 items-center w-full max-w-[400px] shadow-md transition duration-500 hover:shadow-xl hover:-translate-y-2 cursor-pointer py-10 h-[285px] overflow-hidden lg:text-[20px] ;
 }
 .services-container{
-    @apply bg-primary pb-12 pt-6 grid place-items-center xl:justify-center
+    @apply bg-background dark:bg-dark-background pb-12 pt-6 grid place-items-center xl:justify-center
 }

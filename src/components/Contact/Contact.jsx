@@ -78,7 +78,7 @@ export default function Contact() {
     <section
       id="hire-me"
       ref={ref}
-      className={`w-full ${styles.body} bg-secondary pt-6`}
+      className={`w-full ${styles.body} bg-secondary dark:bg-dark-secondary pt-6`}
     >
       <Heading name="Contact" />
       <Grid gutter={60} className={`font-sans`} pr={`sm`}>
