@@ -1,7 +1,7 @@
 import { Textarea, SimpleGrid, Group, Grid, Text } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { styles, contactInfo } from "../../data";
-import Btn from "../Button";
+// import Btn from "../Button";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "@react-spring/web";
 import "./Contact.css";
@@ -61,7 +61,7 @@ export default function Contact() {
       return;
     }
 
-    emailjs.sendForm('service_x3g06gg', 'template_z0iyypf', formD.current, 'J3mNgEZxGKtD-N8E_', form.values.email)
+    emailjs.sendForm('service_ex8tsn4', 'template_rx7i01z', formD.current, 's_s4e__gS-JwAFWRs', form.values.email)
     .then((result) => {
         console.log(result.text);
         setMsg(true);
@@ -148,7 +148,7 @@ export default function Contact() {
               />
 
               <Group justify="center">
-                <input type="submit" value="Send Message" className="bg-[#43366a] rounded-3xl hover:border-2 hover:border-accent hover:border-solid hover:text-white mt-[20px] px-4 py-2.5"/>
+                <input type="submit" value="Send Message" className="bg-[#43366a] rounded-3xl hover:border-2 hover:border-accent hover:border-solid hover:text-white mt-[20px] px-4 py-2.5 hover:cursor-pointer"/>
               </Group>
 
               {/* Display the text if the form has been submitted successfully */}

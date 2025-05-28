@@ -10,7 +10,7 @@ export const contactInfo = [
     },
     {
       icon: <IconImports.IoMdMail className="w-6 h-6 mt-0.5" />,
-      info: "azubogusucess0@gmail.com",
+      info: "azubogusuccess0@gmail.com",
       id: 2,
     },
     {
