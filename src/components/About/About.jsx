@@ -35,7 +35,7 @@ export default function About() {
           <animated.div style={leftColAnimation}>
             <Image
               src={aboutContent.img}
-              className={`max-w-[500px] w-full h-[410px] object-cover object-top mx-auto rounded-xl`}
+              className={`max-w-[500px] w-full h-[410px] object-cover object-center mx-auto rounded-xl`}
             />
           </animated.div>
         </Grid.Col>

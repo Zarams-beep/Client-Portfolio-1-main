@@ -33,8 +33,8 @@ export default function Header() {
 
   const handleDownload = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '../../assets/resume-cv/CV.pdf';
-    downloadLink.download = 'CV.pdf';
+    downloadLink.href = '/CV.pdf';
+    downloadLink.download = 'Azubogu Success Ifechukwu.pdf';
     downloadLink.click();
 
     // Set the state to indicate that the CV has been downloaded
@@ -89,7 +89,7 @@ export default function Header() {
 
             {/* Display the text if the CV has been downloaded */}
             {downloaded && (
-              <Text className="text-accent mt-2">You've downloaded my CV.</Text>
+              <Text className="text-accent text-sm mt-2">You've downloaded my CV.</Text>
             )}
           </animated.div>
         </Grid.Col>

@@ -92,7 +92,7 @@ export default function Contact() {
           >
             {contactInfo.map((info) => (
               <div
-                className="flex gap-5 text-white lg:text-[17px] text-14px min-[480px]:text-16px"
+                className="flex items-end gap-3 text-white lg:text-[17px] text-14px min-[480px]:text-16px"
                 key={info.id}
               >
                 {info.icon}
