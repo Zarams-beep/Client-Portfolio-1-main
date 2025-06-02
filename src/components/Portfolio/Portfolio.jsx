@@ -3,32 +3,17 @@ import classes from "./Portfolio.module.css";
 import Btn from "../Button";
 import { styles, PPTS, projectTypes } from "../../data";
 import Heading from "../Heading";
-import { useTrail, animated } from "@react-spring/web";
-import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 
 export default function Portfolio() {
   const navigate = useNavigate();
 
-  const [ref, inView] = useInView({
-    threshold: 0.4,
-    triggerOnce: true,
-  });
-
-  const trail = useTrail(PPTS.length, {
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0)" : "translateX(-50%)",
-    filter: inView ? "blur(0)" : "blur(4px)",
-    config: { mass: 1, tension: 100, friction: 26 },
-    delay: 300, // Adjust this delay based on your preference
-  });
-
   const handleNavigate = (projectType) => {
     navigate(`/projects/${projectType}`);
   };
 
-  const all = trail.map((style, index) => (
-    <animated.div key={index} style={style}>
+  const all = PPTS.map((item, index) => (
+    <div key={index}>
       <Card
         withBorder
         radius="md"
@@ -37,17 +22,17 @@ export default function Portfolio() {
       >
         <Card.Section className="h-[180px] w-full max-w-[400px] overflow-hidden mt-[0.15rem]">
           <Image
-            src={PPTS[index].src}
+            src={item.src}
             className="w-full h-full transition duration-500 hover:scale-110"
           />
         </Card.Section>
 
         <Text className={classes.title} fw={700}>
-          {PPTS[index].project}
+          {item.project}
         </Text>
 
         <Text fz="sm" lineClamp={4}>
-          {PPTS[index].detail}
+          {item.detail}
         </Text>
 
         <Group justify="center" className="w-[100vw]" key={`btn-${index}`}>
@@ -59,17 +44,16 @@ export default function Portfolio() {
           />
         </Group>
       </Card>
-    </animated.div>
+    </div>
   ));
 
   return (
     <section
       className={`${styles.body} bg-background dark:bg-dark-background pb-12 pt-6 grid place-items-center xl:justify-center`}
-      ref={ref}
       id="projects"
     >
       <Heading name="My" name2="Porfolio" />
-      <SimpleGrid mt={60} cols={{ base: 1, xs:2, md: 3, lg: 4 }}>
+      <SimpleGrid mt={60} cols={{ base: 1, xs: 2, md: 3, lg: 4 }}>
         {all}
       </SimpleGrid>
     </section>
