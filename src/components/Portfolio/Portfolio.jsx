@@ -69,7 +69,7 @@ export default function Portfolio() {
       id="projects"
     >
       <Heading name="My" name2="Porfolio" />
-      <SimpleGrid mt={60} cols={{ base: 1, xs:2, sm: 3, lg: 4 }}>
+      <SimpleGrid mt={60} cols={{ base: 1, sm:2, md: 3, lg: 4 }}>
         {all}
       </SimpleGrid>
     </section>
