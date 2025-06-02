@@ -69,7 +69,14 @@ export default function Portfolio() {
       id="projects"
     >
       <Heading name="My" name2="Porfolio" />
-      <SimpleGrid mt={60} cols={{ base: 1, sm:2, md: 3, lg: 4 }}>
+      <SimpleGrid  mt={60}
+  spacing="lg"
+  cols={4}
+  breakpoints={[
+    { maxWidth: 'md', cols: 3 },
+    { maxWidth: 'sm', cols: 2 },
+    { maxWidth: 'xs', cols: 1 },
+  ]}>
         {all}
       </SimpleGrid>
     </section>
